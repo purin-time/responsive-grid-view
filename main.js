@@ -2,12 +2,11 @@
 {
   const open = document.getElementById('open');
   const overlay = document.querySelector('.overlay');
-  const close = document.getElementById('close');
 
   open.addEventListener('click', ()=> {
-    overlay.classList.add('show');
+    overlay.classList.toggle('show');
   });
-  close.addEventListener('click', () => {
+  overlay.addEventListener('click', () => {
     overlay.classList.remove('show');
   });
 }
